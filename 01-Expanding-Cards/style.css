@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter&family=Noto+Sans+KR:wght@500&family=Poppins:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #ffc051;
+}
+.card_container {
+  display: flex;
+  width: 80vw;
+}
+
+.card {
+  flex: 0.5;
+  height: 30rem;
+  margin: 10px;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 700ms;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card.expand {
+  flex: 5;
+  border-radius: 1rem;
+}
+
+.desc_container {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 1rem;
+  cursor: default;
+}
+.desc_container > h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.desc_container > p {
+  text-align: justify;
+  letter-spacing: 0.2rem;
+}
+.desc_container > a {
+  text-decoration: none;
+  color: inherit;
+  background: #0097d8;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-right: 0px;
+}
+.desc_container > a:hover {
+  background: #0070f7;
+}
+.desc_container > a > span {
+  vertical-align: middle;
+}
+.hide {
+  display: none;
+}
+
+#card1 {
+  background-image: url('../src/img1.jpg');
+}
+
+#card2 {
+  background-image: url('../src/img2.jpg');
+}
+
+#card3 {
+  background-image: url('../src/img3.jpg');
+}
+
+#card4 {
+  background-image: url('../src/img4.jpg');
+}
+
+#card5 {
+  background-image: url('../src/img5.jpg');
+}
