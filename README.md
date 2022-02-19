@@ -15,3 +15,8 @@ css의 flex 속성과 transition을 활용해서 각 카드들을 클릭했을 �
 다시 돋보기 아이콘을 클릭하면 크기가 줄어든다.
 
 검색창이 줄어들었을 때는 input 박스가 안보이고 늘어났을 때는 보이는 기능은 css의 overflow: hidden 속성을 활용해서 구현했다.
+
+### 04 - Blurry Loading Image [코드](https://github.com/JJakDDo/mini-projects/tree/main/04-Blur-Image-Loading)
+이미지가 로딩이 될 때 처음에는 Blurry 상태이다가 로딩이 100%가 되면 선명한 이미지가 노출된다.
+
+css의 filter: blur() 함수를 사용해서 이미지의 blur 효과를 구현했다.
