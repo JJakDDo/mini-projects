@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333234;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#search_bar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  font-size: 2rem;
+}
+
+#search_btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 0;
+}
+
+#search_bar,
+#search_btn {
+  transition: width ease 0.5s, margin ease 0.5s;
+}
+
+#search_btn:hover {
+  cursor: pointer;
+}
