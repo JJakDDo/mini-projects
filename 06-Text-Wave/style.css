@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5679d0;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_container {
+  width: 300px;
+  height: 400px;
+  background: #a3aee5;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#email_container {
+  width: 200px;
+  height: 70px;
+  position: relative;
+}
+#email_letters {
+  position: absolute;
+  display: flex;
+}
+#password_container {
+  width: 200px;
+  height: 70px;
+  position: relative;
+}
+#password_letters {
+  position: absolute;
+  display: flex;
+}
+.letter {
+  position: relative;
+  top: 0px;
+  font-size: 1.2rem;
+  transition-property: top;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+}
+
+input {
+  position: absolute;
+  width: 100%;
+  background: #a3aee5;
+  border: none;
+  border-bottom: solid 1px black;
+  padding: 10px 0px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: #002167;
+  color: white;
+  border-radius: 10px;
+}
