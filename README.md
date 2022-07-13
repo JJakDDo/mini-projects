@@ -26,8 +26,13 @@ css의 flex 속성과 transition을 활용해서 각 카드들을 클릭했을 �
 
 css의 filter: blur() 함수를 사용해서 이미지의 blur 효과를 구현했다.
 
-### 05 - Hiddne Search Bar [코드](https://github.com/JJakDDo/mini-projects/tree/main/05-Hidden-Search-Bar)
+### 05 - Hidden Search Bar [코드](https://github.com/JJakDDo/mini-projects/tree/main/05-Hidden-Search-Bar)
 
 돋보기 모양의 버튼을 클릭하면 숨겨져있던 Search Bar가 애니메이션과 함께 노출된다.
 
 버튼 안에 icon을 추가해줬는데 icon이 가운데 정렬이 되지 않아서 line-height: 0을 추가해줘서 해결했다.
+
+### 06 - Text Wave [코드](https://github.com/JJakDDo/mini-projects/tree/main/06-Text-Wave)
+
+Input 박스를 클릭하면 텍스트들이 웨이브 치듯이 위로 올라가는 애니메이션을 구현했다.
+다른 영역을 클릭하면 텍스트들이 다시 웨이브 치면서 원래 위치로 내려간다.
