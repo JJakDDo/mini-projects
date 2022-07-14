@@ -35,4 +35,13 @@ css의 filter: blur() 함수를 사용해서 이미지의 blur 효과를 구현�
 ### 06 - Text Wave [코드](https://github.com/JJakDDo/mini-projects/tree/main/06-Text-Wave)
 
 Input 박스를 클릭하면 텍스트들이 웨이브 치듯이 위로 올라가는 애니메이션을 구현했다.
+
 다른 영역을 클릭하면 텍스트들이 다시 웨이브 치면서 원래 위치로 내려간다.
+
+### 07 - KeyCodes [코드](https://github.com/JJakDDo/mini-projects/tree/main/07-KeyCodes)
+
+키보드에서 임의의 키를 누르면 해당 키의 키코드 값들이 노출되게 구현했다.
+
+div에서 텍스트를 정중앙에 위치하기 위해서 text-align:center와 line-height를 div의 height와 동일하게 맞춰서 해결했다.
+
+event.keyCode는 현재 deprecated 되어서 사용 하지않고 event.code를 대신 사용한다.

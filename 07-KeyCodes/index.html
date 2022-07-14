@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>키코드</title>
+  <link rel='stylesheet' href='style.css'></link>
+</head>
+<body>
+  <div class="container">
+    <div class='intro'>
+      아무키나 입력하세요
+    </div>
+    <div class='keycodes_container hidden'>
+      <div class='codes'>
+        <span>event.key</span>
+        <div id='event_key'></div>
+      </div>
+      <div class='codes'>
+        <span>event.keyCode<br />(Deprecated)</span>
+        <div id='event_keycode'></div>
+      </div>
+      <div class='codes'>
+        <span>event.code</span>
+        <div id='event_code'></div>
+      </div>
+    </div>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+</html>
