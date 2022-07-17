@@ -45,3 +45,7 @@ Input 박스를 클릭하면 텍스트들이 웨이브 치듯이 위로 올라�
 div에서 텍스트를 정중앙에 위치하기 위해서 text-align:center와 line-height를 div의 height와 동일하게 맞춰서 해결했다.
 
 event.keyCode는 현재 deprecated 되어서 사용 하지않고 event.code를 대신 사용한다.
+
+### 08 - Drink Water [코드](https://github.com/JJakDDo/mini-projects/tree/main/08-DrinkWater)
+
+하루에 물을 얼마나 마시는지 측정하기 위해 250ml 잔을 마우스로 클릭하면 목표치인 2L 중 얼마나 마셨는지와 몇 L가 남았는지 알려준다.
