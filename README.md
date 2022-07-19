@@ -49,3 +49,26 @@ event.keyCode는 현재 deprecated 되어서 사용 하지않고 event.code를 �
 ### 08 - Drink Water [코드](https://github.com/JJakDDo/mini-projects/tree/main/08-DrinkWater)
 
 하루에 물을 얼마나 마시는지 측정하기 위해 250ml 잔을 마우스로 클릭하면 목표치인 2L 중 얼마나 마셨는지와 몇 L가 남았는지 알려준다.
+
+### 09 - Kinetic Loader [코드](https://github.com/JJakDDo/mini-projects/tree/main/09-KineticLoader)
+
+삼각형 2개를 활용해서 로딩바를 구현했다.
+
+삼각형은 css의 border를 활용해서 만들었다. border들이 만나는 지점은 대각선으로 되어있다.
+
+이 때, width와 height를 0으로 만들면 border만 남게되고 border-top, left, right을 transparent로 만들면 border-bottom만 삼각형 모양으로 나오게된다.
+
+```
+.loader::before,
+.loader::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid white;
+  animation: rotate1 2s linear infinite 0.5s;
+}
+```
