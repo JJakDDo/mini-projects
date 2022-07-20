@@ -72,3 +72,7 @@ event.keyCode는 현재 deprecated 되어서 사용 하지않고 event.code를 �
   animation: rotate1 2s linear infinite 0.5s;
 }
 ```
+
+### 10 - Increment Counter [코드](https://github.com/JJakDDo/mini-projects/tree/main/10-IncrementCounter)
+
+0 부터 타켓 숫자까지 올라가는 애니메이션을 setInterval을 사용해서 구현했다.
