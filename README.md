@@ -76,3 +76,9 @@ event.keyCode는 현재 deprecated 되어서 사용 하지않고 event.code를 �
 ### 10 - Increment Counter [코드](https://github.com/JJakDDo/mini-projects/tree/main/10-IncrementCounter)
 
 0 부터 타켓 숫자까지 올라가는 애니메이션을 setInterval을 사용해서 구현했다.
+
+### 11 - Animated Count Down [코드](https://github.com/JJakDDo/mini-projects/tree/main/11-AnimatedCountdown)
+
+10 부터 카운트다운 되는 애니메이션을 구현했다.
+
+<img src="https://user-images.githubusercontent.com/34996487/180181711-c396b515-6815-466e-a449-22ee19838624.gif"></img>
