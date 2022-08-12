@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #252a34;
+}
+
+.header {
+  width: 100%;
+  color: #eaeaea;
+  background-color: #ff2e63;
+  text-align: center;
+  padding: 1rem;
+}
+
+.words-list {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.finish-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
+
+.word-input-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.word-input {
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.word {
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  width: 100px;
+  text-align: center;
+  color: #eaeaea;
+}
