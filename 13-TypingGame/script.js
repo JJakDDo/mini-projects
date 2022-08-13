@@ -1,23 +1,7 @@
+import words from "./wordsList.js";
 const wordsBox = document.querySelector(".words-list");
 const input = document.querySelector(".word-input");
 let boxWidth, boxHeight;
-let words = [
-  "apple",
-  "banana",
-  "car",
-  "dive",
-  "elephant",
-  "fox",
-  "giraffe",
-  "hope",
-  "ink",
-  "jump",
-  "kite",
-  "lion",
-  "mule",
-  "neon",
-  "opportunity",
-];
 
 let currentWords = [];
 
@@ -30,8 +14,9 @@ getWidthAndHeight();
 
 const getNewWord = () => {
   const randomIndex = Math.floor(Math.random() * words.length);
-  currentWords.push(words[randomIndex]);
-  return words[randomIndex];
+  const word = words[randomIndex].word.replace(/\d/gi, "");
+  currentWords.push(word);
+  return word;
 };
 
 const intervalId = setInterval(() => {
@@ -64,16 +49,18 @@ const getMovementByFrame = () => {
 
 requestAnimationFrame(animation);
 
-input.addEventListener("input", () => {
-  let index = currentWords.indexOf(input.value);
-  if (index >= 0) {
-    const wordList = document.querySelectorAll(".word");
-    currentWords = [
-      ...currentWords.slice(0, index),
-      ...currentWords.slice(index + 1),
-    ];
-    wordsBox.removeChild(wordList[index]);
-    input.value = "";
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    let index = currentWords.indexOf(input.value);
+    if (index >= 0) {
+      const wordList = document.querySelectorAll(".word");
+      currentWords = [
+        ...currentWords.slice(0, index),
+        ...currentWords.slice(index + 1),
+      ];
+      wordsBox.removeChild(wordList[index]);
+      input.value = "";
+    }
   }
 });
 
