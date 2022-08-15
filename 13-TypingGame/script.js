@@ -1,9 +1,11 @@
 import words from "./wordsList.js";
 const wordsBox = document.querySelector(".words-list");
 const input = document.querySelector(".word-input");
+const scoreElem = document.querySelector(".score > p");
 let boxWidth, boxHeight;
 
 let currentWords = [];
+let score = 0;
 
 const getWidthAndHeight = () => {
   boxWidth = wordsBox.getBoundingClientRect().width;
@@ -36,6 +38,7 @@ const animation = () => {
       parseInt(wordList[i].style.top) + getMovementByFrame() + "px";
     if (parseInt(wordList[i].style.top) + height >= boxHeight) {
       clearInterval(intervalId);
+      input.disabled = true;
       return;
     }
   }
@@ -49,6 +52,11 @@ const getMovementByFrame = () => {
 
 requestAnimationFrame(animation);
 
+const updateScore = () => {
+  score++;
+  scoreElem.innerText = `점수: ${score}`;
+};
+
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     let index = currentWords.indexOf(input.value);
@@ -59,8 +67,9 @@ input.addEventListener("keydown", (e) => {
         ...currentWords.slice(index + 1),
       ];
       wordsBox.removeChild(wordList[index]);
-      input.value = "";
+      updateScore();
     }
+    input.value = "";
   }
 });
 
