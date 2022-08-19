@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  fill: none;
+  width: 100px;
+  stroke-width: 11px;
+}
+
+path {
+  stroke: #000;
+  stroke-dasharray: var(--length);
+  stroke-dashoffset: var(--length);
+  animation: path var(--duration) forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes path {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
